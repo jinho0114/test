@@ -1,7 +1,7 @@
 package Test.test.project.service;
 
 import Test.test.project.entity.PlantEntity;
-import Test.test.project.entity.PlantRepository;
+import Test.test.project.repository.PlantRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import lombok.RequiredArgsConstructor;
