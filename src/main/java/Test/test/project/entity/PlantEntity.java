@@ -6,21 +6,15 @@ import javax.persistence.*;
 
 @Entity
 @Getter
-@ToString
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class plantEntity {
+public class PlantEntity {
 
     @Id
     @Column
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Column
     private String plantName;
-
-    @Builder
-    public plantEntity(Long id, String plantName){
-        this.id=id;
+    public PlantEntity(String plantName){
         this.plantName=plantName;
     }
-
-
 }
